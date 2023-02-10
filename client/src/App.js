@@ -7,7 +7,6 @@ import  PenIcon from "@mui/icons-material/Create";
 import { fetchCustomers } from './actions/customer.js';
 import MailForm from './components/MailForm.jsx';
 import CustomersList from './components//CustomersList.jsx';
-import LoginContainer from './components/user/UserLogin.jsx';
 
 
 const useStyles=makeStyles({
@@ -53,7 +52,6 @@ function App() {
             <Router>
               <Routes>
                 <Route exact path='/' element={<><MailForm/><CustomersList/></>} />
-                <Route exact path='/login' element={<LoginContainer/>} />
               </Routes>
             </Router>
           </Grid>
